@@ -15,7 +15,33 @@
 
     <!-- Custom styles for this template -->
     <link href="../css/modern-business.css" rel="stylesheet">
-
+      
+      <script src="simpleCart.js"></script>
+        <script>
+            simpleCart({
+                checkout: {
+                    type: "PayPal",
+                    email: "you@yours.com"
+                },
+                cartStyle: "table", 
+                cartColumns: [
+                    /* Picture (same for every product right now) */
+                    { view: function( item, column) {
+                        return "<a class=\"thumbnail pull-left\" href=\"#\"> "
+                            +"<img class=\"media-object\" src=\"http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png\" "
+                            +"style=\"width: 72px; height: 72px;\"> </a>";
+                    }, label: false },
+                    /* Name */
+                    { attr: "name", label: "Product" },
+                    /* Quantity */
+                    { attr: "quantity" , label: "Qty" } ,
+                    /* Price */
+                    { attr: "price" , label: "Price", view: 'currency' } ,
+                    /* Remove */
+                    { view: "remove" , text: "Remove" , label: false }
+                ]
+            });
+        </script>
   </head>
 
   <body>
@@ -88,7 +114,12 @@
       <h1 class="mt-4 mb-3">Contact
         <small>Subheading</small>
       </h1>
-
+        <div class ="simpleCart_shelfItem">
+                                <h2 class="item_name"> Mario Kart </h2>
+                            <span class="item_price">$35.99</span>
+                            <a class="item_add" href="javascript:;"> Add to Cart </a>
+                            </div>
+        <div class="simpleCart_items"></div>
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="index.html">Home</a>
