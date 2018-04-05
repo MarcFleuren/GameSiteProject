@@ -19,20 +19,42 @@ public class ChromeDriverTest {
 
 	@Test
 	public void testGoogleSearch() throws InterruptedException {
-		driver.get("http://www.google.com/");
+		driver.get("C:\\Users\\Admin\\Desktop\\GameSiteProject\\GameSiteProject\\html\\index.html");
 		driver.manage().window().fullscreen();
 		Thread.sleep(5000); // Let the user actually see something!
-		WebElement searchBox = driver.findElement(By.name("q"));
-		searchBox.sendKeys("ChromeDriver");
-		searchBox.submit();
-		WebElement chromeDriverLink = driver
-				.findElement(By.linkText("ChromeDriver - WebDriver for Chrome - Google Sites"));
-		chromeDriverLink.click();
-		Thread.sleep(5000);
+
+
+
+		Thread.sleep(2000);
+
+		WebElement navBar2 = driver.findElement(By.cssSelector("#navbarResponsive > ul > li:nth-child(2) > a"));
+		navBar2.click();
+
+		Thread.sleep(2000);
+
+		WebElement navBar3 = driver.findElement(By.cssSelector("#navbarResponsive > ul > li:nth-child(3) > a"));
+		navBar3.click();
+
+		Thread.sleep(2000);
+
+		WebElement navBar4 = driver.findElement(By.cssSelector("#navbarResponsive > ul > li:nth-child(2) > a"));
+		navBar4.click();
+
+		Thread.sleep(2000);
+
+		WebElement learnMore1 = driver.findElement(By.xpath("/html/body/div/div/div[1]/div/div[2]/div/button"));
+		learnMore1.click();
+
+		Thread.sleep(2000);
+
+
+
+
 	}
 
 	@After
-	public void tearDown() {
+	public void tearDown() throws InterruptedException {
+		Thread.sleep(5000);
 		driver.quit();
 	}
 
