@@ -10,11 +10,18 @@
 
     <title>Modern Business - Start Bootstrap Template</title>
 
-     <!-- Bootstrap core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="../css/modern-business.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="../css/modern-business.css" rel="stylesheet">
+
+        <!--        Importing Jquery scripts-->
+        <script src="../vendor/jquery/jquery.min.js"></script>
+
+        <!--        Importing Bootrap Javascript-->
+        <script src="../vendor/bootstrap/js/bootstrap.js"></script>
+        <script src="simpleCart.js"></script>
 
   </head>
 
@@ -65,76 +72,178 @@
             </li>
 -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Other Pages
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                <a class="dropdown-item" href="faq.html">FAQ</a>
-                <a class="dropdown-item" href="404.html">404</a>
-                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Other Pages
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                                <a class="dropdown-item" href="full-width.html">Full Width Page</a>
+                                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
+                                <a class="dropdown-item" href="faq.html">FAQ</a>
+                                <a class="dropdown-item" href="404.html">404</a>
+                                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <!-- Page Content -->
-    <div class="container">
+        <header>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <!-- Slide One - Set the background image for this slide in the line below -->
+                    <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <img class="img-fluid" src="../img/Vampyr.jpg" alt="Los Angeles" class="center" width = "1000px">
+                            
+                        </div>
+                    </div>
+                    <!-- Slide Two - Set the background image for this slide in the line below -->
+                    <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <img class="img-fluid" src="../img/GodOfWar.jpg" alt="Los Angeles" class="center" width = "1000px">
+                            
+                        </div>
+                    </div>
+                    <!-- Slide Three - Set the background image for this slide in the line below -->
+                    <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <img class="img-fluid" src="../img/Agony.jpg" alt="Los Angeles" class="center" width = "1000px">
+                            
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </header>
 
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Services
-        <small>Subheading</small>
-      </h1>
+        <!-- Page Content -->
+        <div class="container">
 
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="breadcrumb-item active">Services</li>
-      </ol>
+            <h1 class="my-4">Upcoming Games</h1>
 
-      <!-- Image Header -->
-      <img class="img-fluid rounded mb-4" src="http://placehold.it/1200x300" alt="">
+            <!-- Marketing Icons Section -->
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <h4 class="card-header">Battlefield 4</h4>
+                        <div class="card-body">
+                            <img class="img-fluid" src="../img/Battlefield4.jpg" alt="Los Angeles" class="center" width = "300px">
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
 
-      <!-- Marketing Icons Section -->
-      <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">Card Title</h4>
-            <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                                <!-- Trigger the modal with a button -->
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Learn More</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <!--                            <h4 class="modal-title">Modal Header</h4>-->
+                                            </div>
+                                            <div class="modal-body">
+                                                
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/wJ_F525yHVY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                            
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <h4 class="card-header">Tom Clancy</h4>
+                        <div class="card-body">
+                            <img class="img-fluid" src="../img/TomClancy.jpg" alt="Los Angeles" class="center" width = "300px">
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+
+                                <!-- Trigger the modal with a button -->
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Learn More</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <!--                            <h4 class="modal-title">Modal Header</h4>-->
+                                            </div>
+                                            <div class="modal-body">
+                                                
+                                               <iframe width="560" height="315" src="https://www.youtube.com/embed/EWJD8DMasCU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                            
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <h4 class="card-header">Scalebound</h4>
+                        <div class="card-body">
+                            <img class="img-fluid" src="../img/Scalebound.jpg" alt="Los Angeles" class="center" width = "300px">
+                        </div>
+                        <div class="card-footer">
+                           <div class="container">
+
+                                <!-- Trigger the modal with a button -->
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Learn More</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <!--                            <h4 class="modal-title">Modal Header</h4>-->
+                                            </div>
+                                            <div class="modal-body">
+                                                
+                                               <iframe width="560" height="315" src="https://www.youtube.com/embed/_k4FTt-Ri0c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                            
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">Card Title</h4>
-            <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">Card Title</h4>
-            <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </div>
+            <!-- /.row -->
       <!-- /.row -->
 
     </div>

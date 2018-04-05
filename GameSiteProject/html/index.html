@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Modern Business - Start Bootstrap Template</title>
+        <title>Games4You</title>
 
         <!-- Bootstrap core CSS -->
         <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,32 +21,34 @@
 
         <!--        Importing Bootrap Javascript-->
         <script src="../vendor/bootstrap/js/bootstrap.js"></script>
-        <script src="simpleCart.js"></script>
-        <script>
-            simpleCart({
-                checkout: {
-                    type: "PayPal",
-                    email: "you@yours.com"
-                },
-                cartStyle: "table", 
-                cartColumns: [
-                    /* Picture (same for every product right now) */
-                    { view: function( item, column) {
-                        return "<a class=\"thumbnail pull-left\" href=\"#\"> "
-                            +"<img class=\"media-object\" src=\"http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png\" "
-                            +"style=\"width: 72px; height: 72px;\"> </a>";
-                    }, label: false },
-                    /* Name */
-                    { attr: "name", label: "Product" },
-                    /* Quantity */
-                    { attr: "quantity" , label: "Qty" } ,
-                    /* Price */
-                    { attr: "price" , label: "Price", view: 'currency' } ,
-                    /* Remove */
-                    { view: "remove" , text: "Remove" , label: false }
-                ]
-            });
-        </script>
+        <!--
+<script src="simpleCart.js"></script>
+<script>
+simpleCart({
+checkout: {
+type: "PayPal",
+email: "you@yours.com"
+},
+cartStyle: "table", 
+cartColumns: [
+/* Picture (same for every product right now) */
+{ view: function( item, column) {
+return "<a class=\"thumbnail pull-left\" href=\"#\"> "
++"<img class=\"media-object\" src=\"http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png\" "
++"style=\"width: 72px; height: 72px;\"> </a>";
+}, label: false },
+/* Name */
+{ attr: "name", label: "Product" },
+/* Quantity */
+{ attr: "quantity" , label: "Qty" } ,
+/* Price */
+{ attr: "price" , label: "Price", view: 'currency' } ,
+/* Remove */
+{ view: "remove" , text: "Remove" , label: false }
+]
+});
+</script>
+-->
 
     </head>
 
@@ -125,21 +127,21 @@ Blog
                     <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
                         <div class="carousel-caption d-none d-md-block">
                             <img class="img-fluid" src="../img/bf1.jpg" alt="Los Angeles" class="center" width = "1000px">
-                            <p>This is a description for the first slide.</p>
+                            
                         </div>
                     </div>
                     <!-- Slide Two - Set the background image for this slide in the line below -->
                     <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
                         <div class="carousel-caption d-none d-md-block">
                             <img class="img-fluid" src="../img/RL.jpg" alt="Los Angeles" class="center" width = "1000px">
-                            <p>This is a description for the second slide.</p>
+                            
                         </div>
                     </div>
                     <!-- Slide Three - Set the background image for this slide in the line below -->
                     <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
                         <div class="carousel-caption d-none d-md-block">
-                            <img class="img-fluid" src="../img/MarioKart.jpg" alt="Los Angeles" class="center" width = "1000px">
-                            <p>This is a description for the third slide.</p>
+                            <img class="img-fluid" src="../img/MarioKart7.jpg" alt="Los Angeles" class="center" width = "1000px">
+                            
                         </div>
                     </div>
                 </div>
@@ -165,15 +167,35 @@ Blog
                     <div class="card h-100">
                         <h4 class="card-header">Mario Kart</h4>
                         <div class="card-body">
-                            <img class="img-fluid" src="../img/MarioKart.jpg" alt="Los Angeles" class="center" width = "300px">
+                            <img class="img-fluid" src="../img/mariokart7.jpg" alt="Los Angeles" class="center" width = "300px">
                         </div>
                         <div class="card-footer">
-                            <div class ="simpleCart_shelfItem">
-                                <h2 class="item_name"> Mario Kart </h2>
-                            <span class="item_price">$35.99</span>
-                            <a class="item_add" href="javascript:;"> Add to Cart </a>
+                            <div class="container">
+
+                                <!-- Trigger the modal with a button -->
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Learn More</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <!--                            <h4 class="modal-title">Modal Header</h4>-->
+                                            </div>
+                                            <div class="modal-body">
+                                                
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/tKlRN2YpxRE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                            
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -184,7 +206,29 @@ Blog
                             <img class="img-fluid" src="../img/RL.jpg" alt="Los Angeles" class="center" width = "300px">
                         </div>
                         <div class="card-footer">
-                            <a href="DefaultLink.html" class="btn btn-primary">Learn More</a>
+                            <div class="container">
+
+                                <!-- Trigger the modal with a button -->
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Learn More</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <!--                            <h4 class="modal-title">Modal Header</h4>-->
+                                            </div>
+                                            <div class="modal-body">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2C9LxNlzeUM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -195,7 +239,29 @@ Blog
                             <img class="img-fluid" src="../img/bf1.jpg" alt="Los Angeles" class="center" width = "300px">
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <div class="container">
+
+                                <!-- Trigger the modal with a button -->
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Learn More</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <!--                            <h4 class="modal-title">Modal Header</h4>-->
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>This is a large modal.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -203,110 +269,116 @@ Blog
             <!-- /.row -->
 
             <!-- Portfolio Section -->
-            <h2>Portfolio Heading</h2>
-            
-            <div class="simpleCart_items"></div>
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 portfolio-item">
-                    <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="#">Project One</a>
-                            </h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 portfolio-item">
-                    <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="#">Project Two</a>
-                            </h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 portfolio-item">
-                    <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="#">Project Three</a>
-                            </h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 portfolio-item">
-                    <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="#">Project Four</a>
-                            </h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 portfolio-item">
-                    <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="#">Project Five</a>
-                            </h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 portfolio-item">
-                    <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="#">Project Six</a>
-                            </h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!--
+<h2>Portfolio Heading</h2>
+
+<div class="simpleCart_items"></div>
+<div class="row">
+<div class="col-lg-4 col-sm-6 portfolio-item">
+<div class="card h-100">
+<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+<div class="card-body">
+<h4 class="card-title">
+<a href="#">Project One</a>
+</h4>
+<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 portfolio-item">
+<div class="card h-100">
+<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+<div class="card-body">
+<h4 class="card-title">
+<a href="#">Project Two</a>
+</h4>
+<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 portfolio-item">
+<div class="card h-100">
+<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+<div class="card-body">
+<h4 class="card-title">
+<a href="#">Project Three</a>
+</h4>
+<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 portfolio-item">
+<div class="card h-100">
+<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+<div class="card-body">
+<h4 class="card-title">
+<a href="#">Project Four</a>
+</h4>
+<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 portfolio-item">
+<div class="card h-100">
+<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+<div class="card-body">
+<h4 class="card-title">
+<a href="#">Project Five</a>
+</h4>
+<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 portfolio-item">
+<div class="card h-100">
+<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+<div class="card-body">
+<h4 class="card-title">
+<a href="#">Project Six</a>
+</h4>
+<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
+</div>
+</div>
+</div>
+</div>
+-->
             <!-- /.row -->
 
             <!-- Features Section -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Modern Business Features</h2>
-                    <p>The Modern Business template by Start Bootstrap includes:</p>
-                    <ul>
-                        <li>
-                            <strong>Bootstrap v4</strong>
-                        </li>
-                        <li>jQuery</li>
-                        <li>Font Awesome</li>
-                        <li>Working contact form with validation</li>
-                        <li>Unstyled page elements for easy customization</li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-                </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
-                </div>
-            </div>
+            <!--
+<div class="row">
+<div class="col-lg-6">
+<h2>Modern Business Features</h2>
+<p>The Modern Business template by Start Bootstrap includes:</p>
+<ul>
+<li>
+<strong>Bootstrap v4</strong>
+</li>
+<li>jQuery</li>
+<li>Font Awesome</li>
+<li>Working contact form with validation</li>
+<li>Unstyled page elements for easy customization</li>
+</ul>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+</div>
+<div class="col-lg-6">
+<img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
+</div>
+</div>
+-->
             <!-- /.row -->
 
-            <hr>
+            <!--            <hr>-->
 
             <!-- Call to Action Section -->
             <div class="row mb-4">
                 <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                    <h1>And many more...</h1>
+                    
+
                 </div>
                 <div class="col-md-4">
-                    <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+                    <a class="btn btn-lg btn-secondary btn-block" href="Games.html">More Games</a>
                 </div>
             </div>
 
