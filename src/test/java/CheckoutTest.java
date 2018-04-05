@@ -33,7 +33,7 @@ public class CheckoutTest {
 
     @Test
     public void testCarddetails() throws Exception {
-        driver.get("file:///Users/Maz/eclipse-workspace/GameSiteProject/GameSiteProject/html/index.html");
+        driver.get("webdriver.chrome.driver", System.getProperty("user.dir") + "\\chromedriver.exe");
         Thread.sleep(1000);
         driver.findElement(By.linkText("Basket")).click();
         Thread.sleep(1000);
