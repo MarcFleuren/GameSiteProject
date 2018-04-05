@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Basket</title>
 
      <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,6 +16,12 @@
     <!-- Custom styles for this template -->
     <link href="../css/modern-business.css" rel="stylesheet">
 
+    <!-- JS -->
+
+    <script src="../js/basket.js"></script>
+
+    <!-- Basket CSS -->
+    <link href="../css/cart.css" rel="stylesheet"> 
   </head>
 
   <body>
@@ -85,8 +91,8 @@
     <div class="container">
 
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Contact
-        <small>Subheading</small>
+      <h1 class="mt-4 mb-3">Basket
+        <small>Your Order</small>
       </h1>
 
       <ol class="breadcrumb">
@@ -97,41 +103,219 @@
       </ol>
 
       <!-- Content Row -->
-      <div class="row">
-        <!-- Map Column -->
-        <div class="col-lg-8 mb-4">
-          <!-- Embedded Google Map -->
-          <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+      
+ <div class="wrap cf">
+  <h1 class="projTitle">Responsive Table<span>-Less</span> Shopping Cart</h1>
+  <div class="heading cf">
+    <h1>My Cart</h1>
+    <a href="#" class="continue">Continue Shopping</a>
+  </div>
+  <div class="cart">
+<!--    <ul class="tableHead">
+      <li class="prodHeader">Product</li>
+      <li>Quantity</li>
+      <li>Total</li>
+       <li>Remove</li>
+    </ul>-->
+    <ul class="cartWrap">
+      <li class="items odd">
+        
+    <div class="infoWrap"> 
+        <div class="cartSection">
+        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+          <p class="itemNumber">#QUE-007544-002</p>
+          <h3>Item Name 1</h3>
+        
+           <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
+        
+          <p class="stockStatus"> In Stock</p>
+        </div>  
+    
+        
+        <div class="prodTotal cartSection">
+          <p>$15.00</p>
         </div>
-        <!-- Contact Details Column -->
-        <div class="col-lg-4 mb-4">
-          <h3>Contact Details</h3>
-          <p>
-            3481 Melrose Place
-            <br>Beverly Hills, CA 90210
-            <br>
-          </p>
-          <p>
-            <abbr title="Phone">P</abbr>: (123) 456-7890
-          </p>
-          <p>
-            <abbr title="Email">E</abbr>:
-            <a href="mailto:name@example.com">name@example.com
-            </a>
-          </p>
-          <p>
-            <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM
-          </p>
+              <div class="cartSection removeWrap">
+           <a href="#" class="remove">x</a>
         </div>
       </div>
-      <!-- /.row -->
+      </li>
+      <li class="items even">
+        
+       <div class="infoWrap"> 
+        <div class="cartSection">
+         
+        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+          <p class="itemNumber">#QUE-007544-002</p>
+          <h3>Item Name 1</h3>
+        
+           <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
+        
+          <p class="stockStatus"> In Stock</p>
+        </div>  
+    
+        
+        <div class="prodTotal cartSection">
+          <p>$15.00</p>
+        </div>
+              <div class="cartSection removeWrap">
+           <a href="#" class="remove">x</a>
+        </div>
+      </div>
+      </li>
+      
+            <li class="items odd">
+             <div class="infoWrap"> 
+        <div class="cartSection">
+            
+        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+          <p class="itemNumber">#QUE-007544-002</p>
+          <h3>Item Name 1</h3>
+        
+           <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
+        
+          <p class="stockStatus out"> Out of Stock</p>
+        </div>  
+    
+        
+        <div class="prodTotal cartSection">
+          <p>$15.00</p>
+        </div>
+                    <div class="cartSection removeWrap">
+           <a href="#" class="remove">x</a>
+        </div>
+              </div>
+      </li>
+      <li class="items even">
+       <div class="infoWrap"> 
+        <div class="cartSection info">
+             
+        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+          <p class="itemNumber">#QUE-007544-002</p>
+          <h3>Item Name 1</h3>
+        
+          <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
+        
+          <p class="stockStatus"> In Stock</p>
+          
+        </div>  
+    
+        
+        <div class="prodTotal cartSection">
+          <p>$15.00</p>
+        </div>
+    
+            <div class="cartSection removeWrap">
+           <a href="#" class="remove">x</a>
+        </div>
+         </div>
+         <div class="special"><div class="specialContent">Free gift with purchase!, gift wrap, etc!!</div></div>
+      </li>
+      
+      
+      <!--<li class="items even">Item 2</li>-->
+ 
+    </ul>
+  </div>
+  
+  <div class="promoCode"><label for="promo">Have A Promo Code?</label><input type="text" name="promo" placholder="Enter Code" />
+  <a href="#" class="btn"></a></div>
+  
+  <div class="subtotal cf">
+    <ul>
+      <li class="totalRow"><span class="label">Subtotal</span><span class="value">$35.00</span></li>
+      
+          <li class="totalRow"><span class="label">Shipping</span><span class="value">$5.00</span></li>
+      
+            <li class="totalRow"><span class="label">Tax</span><span class="value">$4.00</span></li>
+            <li class="totalRow final"><span class="label">Total</span><span class="value">$44.00</span></li>
+      <li class="totalRow"><a href="#" class="btn continue">Checkout</a></li>
+    </ul>
+  </div>
+</div>
+RERUN
+          <!-- Embedded Google Map -->
+          <!-- <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+        </div> -->
+        <!-- Contact Details Column -->
+        
+      
+      
 
       <!-- Contact Form -->
       <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-      <div class="row">
-        <div class="col-lg-8 mb-4">
-          <h3>Send us a Message</h3>
-          <form name="sentMessage" id="contactForm" novalidate>
+      <!-- <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php">
+      
+              <div class="row">
+                <div class="col-50">
+                  <h3>Billing Address</h3>
+                  <label for="fname"><i class="fa fa-user"></i> Full Name *</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Joe Bloggs" required>
+                  <label for="email"><i class="fa fa-envelope"></i> Email *</label>
+                  <input type="text" id="email" name="email" placeholder="john@example.com" required>
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address *</label>
+                  <input type="text" id="adr" name="address" placeholder="123 Example Street" required>
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" name="city" placeholder="Knutsford">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">County</label>
+                      <input type="text" id="state" name="state" placeholder="Middlesex">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Post Code *</label>
+                      <input type="text" id="zip" name="zip" placeholder="AA1 1AA" required>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Payment</h3>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Name on Card *</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Joe A Bloggs" required>
+                  <label for="ccnum">Card number *</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+                  <label for="expmonth">Exp Month *</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="November" required>
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year *</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2018" required>
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV *</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="352" required>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+              <input type="submit" value="Continue to checkout" class="btn">
+            </form>
+          </div>
+        </div>
+       -->
+      
+      <!-- <div class="row">
+        <div class="col-lg-8 mb-4"> -->
+          <!-- <h3>Send us a Message</h3> -->
+          
+          <!-- <form name="sentMessage" id="contactForm" novalidate>
             <div class="control-group form-group">
               <div class="controls">
                 <label>Full Name:</label>
@@ -159,10 +343,11 @@
             </div>
             <div id="success"></div>
             <!-- For success/fail messages -->
-            <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
-          </form>
-        </div>
+            <!-- <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+          </form> -->
+        <!-- </div> -->
 
+        
       </div>
       <!-- /.row -->
 
