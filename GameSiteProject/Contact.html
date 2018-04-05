@@ -16,34 +16,6 @@
     <!-- Custom styles for this template -->
     <link href="../css/modern-business.css" rel="stylesheet">
       
-      <script src="simpleCart.js"></script>
-        <script>
-            simpleCart({
-                checkout: {
-                    type: "PayPal",
-                    email: "you@yours.com"
-                },
-                cartStyle: "table", 
-                cartColumns: [
-                    /* Picture (same for every product right now) */
-                    { view: function( item, column) {
-                        return "<a class=\"thumbnail pull-left\" href=\"#\"> "
-                            +"<img class=\"media-object\" src=\"http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png\" "
-                            +"style=\"width: 72px; height: 72px;\"> </a>";
-                    }, label: false },
-                    /* Name */
-                    { attr: "name", label: "Product" },
-                    /* Quantity */
-                    { attr: "quantity" , label: "Qty" } ,
-                    /* Price */
-                    { attr: "price" , label: "Price", view: 'currency' } ,
-                    /* Remove */
-                    { view: "remove" , text: "Remove" , label: false }
-                ]
-            });
-        </script>
-  </head>
-
   <body>
 
     <!-- Navigation -->
@@ -64,32 +36,7 @@
             <li class="nav-item">
               <a class="nav-link" href="Basket.html">Basket</a>
             </li>
-<!--
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Portfolio
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-              </div>
-            </li>
--->
-<!--
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Blog
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-                <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-                <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-              </div>
-            </li>
--->
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Other Pages
